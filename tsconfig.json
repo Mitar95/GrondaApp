@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@api/*": ["./package/api/*"],
+      "@types-app/*": ["./package/types/*"],
+      "@components/*": ["./components/*"],
+      "@screens/*": ["./screens/*"],
+      "@store-app/*": ["./package/store/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "__tests__/Home.test.jsx"]
+}
